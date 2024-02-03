@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, serif;
+    transition: 0.2s;
+}
+
+body {
+    background-color: gray;
+}
+
+::-webkit-scrollbar {
+    display:none ;
+}
+
+#project-title {
+    font-size:200px;
+    color: transparent;
+    -webkit-text-stroke: 7px white;
+    transition: 2s;
+}
+
+#top,#bottom {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    background-color: #0a242a;
+    height: 50vh;
+    transition: 0.6s linear;
+}
+
+#top {
+    top: 0;
+}
+
+#bottom {
+    bottom: 0;
+}
+
+#front {
+    color: ghostwhite;
+    padding: 20px;
+    position: fixed;
+    z-index: 1000;
+}
+
+#project-hero-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://render.fineartamerica.com/images/rendered/default/print/8/5.5/break/images/artworkimages/medium/3/1-seamless-painted-blue-square-isometric-cube-background-pattern-tileable-artistic-indigo-and-white-hand-drawn-nautical-boy-theme-acrylic-texture-surface-design-fabric-or-wallpaper-3d-rendering-n-akkash.jpg");
+    height: 100vh;
+}
+
+#back-arrow {
+    z-index: 2;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    color: ghostwhite;
+    font-size: 12px;text-align: right;
+    align-items: center;
+}
+
+#arrow-img {
+    height: 30px;
+    width: 30px;
+    color: ghostwhite;
+    filter: brightness(0) invert(1);
+}
+#logo-name {
+    font-size: 60px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}

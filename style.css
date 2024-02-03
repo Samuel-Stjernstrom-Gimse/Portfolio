@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, serif  ;
+    transition: 0.2s
+;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #0a242a;
+    transition: 0.4s;
+}
+
+#top,#bottom {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    background-color: #0a242a;
+    height: 50vh;
+    transition: 0.6s linear;
+}
+
+#top {
+    top: 0;
+}
+
+#bottom {
+    bottom: 0;
+}
+
+
+
+#front {
+    color: ghostwhite;
+    padding: 20px;
+    position: fixed;
+    z-index: 1000;
+}
+
+#project-title {
+    font-size:200px;
+    color: transparent;
+    -webkit-text-stroke: 7px white;
+    transition: 2s;
+}
+
+#small-pitch {
+    margin-top: 30px ;
+    width: 10vw;
+    color: gray;
+}
+
+::-webkit-scrollbar {
+    display:none ;
+}
+
+
+#projects {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    padding-left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: ghostwhite;
+    font-size: 60px;
+    perspective: 1200px;
+    font-family: racing_sans_oneregular, Arial, serif;
+    text-align: right;
+}
+
+.project-text {
+    transform: rotateY(-40deg);
+    transition: 0.2s;
+    font-family: racing_sans_oneregular, Arial, serif;
+    text-align: right;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    cursor: pointer;
+}
+
+#wiz-cube {transform: rotateY(-40deg);}
+#plant-reminder {transform: rotateY(-40deg);}
+#nft {transform: rotateY(-40deg);}
+#clicker {transform: rotateY(-40deg);}
+
+#wiz-cube:hover,
+#plant-reminder:hover,
+#nft:hover,
+#clicker:hover {
+    transition: 0.2s;
+    transform: rotateY(30deg);
+    color: white;
+}
+
+
+#small-pitch {
+
+}
+
+ul {
+    margin-top: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 20px;
+    list-style: none;
+    margin: 0;
+    padding-bottom: 10px;
+    font-family: Arial, serif ;
+    width: auto;
+}
+
+#logo-name {
+    font-size: 60px;
+    font-family: Arial, serif  ;
+}
+@font-face {
+    font-family: 'racing_sans_oneregular';
+    src: url('/assets/racingsansone-regular-webfont.woff2') format('woff2'),
+    url('assets/racingsansone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#navbar {
+    align-items: center;
+}
+
+#github {
+    margin-top: 50px;
+}
+
+.nav-bar:hover {
+    color: #7d7d7d;
+}
+
+.nav-bar:active {
+    color: #000000;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
