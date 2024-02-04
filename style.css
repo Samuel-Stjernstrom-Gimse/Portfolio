@@ -85,16 +85,19 @@ body {
     -webkit-text-stroke: 1px white;
     cursor: pointer;
 }
-
-#wiz-cube {transform: rotateY(-40deg);}
+.project-text {
+    transform: rotateY(-40deg);
+}
+/*#wiz-cube {transform: rotateY(-40deg);}
 #plant-reminder {transform: rotateY(-40deg);}
 #nft {transform: rotateY(-40deg);}
-#clicker {transform: rotateY(-40deg);}
+#clicker {transform: rotateY(-40deg);}*/
 
-#wiz-cube:hover,
+/*#wiz-cube:hover,
 #plant-reminder:hover,
 #nft:hover,
-#clicker:hover {
+#clicker:hover*/
+.project-text:hover{
     transition: 0.2s;
     transform: rotateY(30deg);
     color: white;
@@ -102,7 +105,11 @@ body {
 
 
 #small-pitch {
+    cursor: pointer;
+}
 
+#small-pitch:hover {
+    color: white;
 }
 
 ul {
@@ -118,19 +125,20 @@ li {
     padding-bottom: 10px;
     font-family: Arial, serif ;
     width: auto;
+    cursor: pointer;
 }
 
 #logo-name {
     font-size: 60px;
     font-family: Arial, serif  ;
 }
+
 @font-face {
     font-family: 'racing_sans_oneregular';
     src: url('/assets/racingsansone-regular-webfont.woff2') format('woff2'),
     url('assets/racingsansone-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 #navbar {

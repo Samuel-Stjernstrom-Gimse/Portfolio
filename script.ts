@@ -2,6 +2,7 @@ const wizCube = document.getElementById('wiz-cube') as HTMLHeadingElement
 const div: NodeListOf<HTMLDivElement> = document.querySelectorAll('.vig')
 const projectText = document.getElementById('projects') as HTMLDivElement
 const projectTitle = document.getElementById('project-title')
+const menuWrap = document.getElementById('menu-wrap') as HTMLDivElement
 
 const vignetteInn = () => {
 	div.forEach((div: HTMLDivElement) => {
@@ -15,10 +16,14 @@ const newWindow = (location: string) => {
 	window.location.href = location
 }
 wizCube.addEventListener('click', () => {
-	projectText.style.color = 'black'
+	menuWrap.style.opacity = '0'
+	projectText.style.transition = '700ms'
+	menuWrap.style.transition = '700ms'
+	projectText.style.opacity = '0'
+	//add same for menu later
 
-	setTimeout(newWindow, 1, 'wizCubePage.html')
-	setTimeout(vignetteInn, 700)
+	setTimeout(newWindow, 700, 'wizCubePage.html')
+	setTimeout(vignetteInn, 1)
 
 	document.body.style.height = '300vh'
 	document.body.style.overflow = 'visible'
