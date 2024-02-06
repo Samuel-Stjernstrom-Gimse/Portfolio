@@ -4,6 +4,7 @@ const div = document.querySelectorAll('.vig');
 const projectText = document.getElementById('projects');
 const projectTitle = document.getElementById('project-title');
 const menuWrap = document.getElementById('menu-wrap');
+const doc = document.body;
 const vignetteInn = () => {
     div.forEach((div) => {
         div.style.height = '25vh';
@@ -14,6 +15,10 @@ const vignetteInn = () => {
 };
 const newWindow = (location) => {
     window.location.href = location;
+};
+const updateOpacity = () => {
+    projectText.style.color = '1';
+    menuWrap.style.opacity = '1';
 };
 wizCube.addEventListener('click', () => {
     menuWrap.style.opacity = '0';

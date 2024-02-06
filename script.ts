@@ -3,6 +3,7 @@ const div: NodeListOf<HTMLDivElement> = document.querySelectorAll('.vig')
 const projectText = document.getElementById('projects') as HTMLDivElement
 const projectTitle = document.getElementById('project-title')
 const menuWrap = document.getElementById('menu-wrap') as HTMLDivElement
+const doc = document.body as HTMLElement
 
 const vignetteInn = () => {
 	div.forEach((div: HTMLDivElement) => {
@@ -15,6 +16,11 @@ const vignetteInn = () => {
 const newWindow = (location: string) => {
 	window.location.href = location
 }
+const updateOpacity = () => {
+	projectText.style.color = '1'
+	menuWrap.style.opacity = '1'
+}
+
 wizCube.addEventListener('click', () => {
 	menuWrap.style.opacity = '0'
 	projectText.style.transition = '700ms'

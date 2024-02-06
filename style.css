@@ -2,8 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: Arial, serif  ;
-    transition: 0.2s
-;
+    transition: 0.2s;
 }
 
 body {
@@ -31,16 +30,15 @@ body {
     bottom: 0;
 }
 
-
-
 #front {
-    color: ghostwhite;
+    color:white;
     padding: 20px;
     position: fixed;
     z-index: 1000;
 }
 
 #project-title {
+
     font-size:200px;
     color: transparent;
     -webkit-text-stroke: 7px white;
@@ -69,7 +67,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: ghostwhite;
     font-size: 60px;
     perspective: 1200px;
     font-family: racing_sans_oneregular, Arial, serif;
@@ -84,6 +81,7 @@ body {
     color: transparent;
     -webkit-text-stroke: 1px white;
     cursor: pointer;
+
 }
 .project-text {
     transform: rotateY(-40deg);
@@ -101,6 +99,7 @@ body {
     transition: 0.2s;
     transform: rotateY(30deg);
     color: white;
+
 }
 
 
@@ -131,6 +130,7 @@ li {
 #logo-name {
     font-size: 60px;
     font-family: Arial, serif  ;
+
 }
 
 @font-face {
@@ -156,7 +156,19 @@ li {
 .nav-bar:active {
     color: #000000;
 }
+
 a {
     color: white;
     text-decoration: none;
+}
+
+#noise {
+    pointer-events: none;
+    background-image: url("/assets/images/Noise & Texture.png");
+    opacity: 0.09;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: 1000;
 }
