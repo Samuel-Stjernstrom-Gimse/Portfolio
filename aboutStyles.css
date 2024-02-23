@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, serif  ;
+    transition: 0.2s;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #252525;
+    transition: 0.4s;
+}
+
+#top,#bottom {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    background-color: #5d5d5d;
+    height: 50vh;
+    transition: 0.6s linear;
+}
+
+#top {
+    top: 0;
+}
+
+#bottom {
+    bottom: 0;
+}
+
+#front {
+    color:white;
+    padding: 20px;
+    position: fixed;
+    z-index: 1000;
+}
+
+#project-title {
+
+    font-size:200px;
+    color: transparent;
+    -webkit-text-stroke: 7px white;
+    transition: 2s;
+}
+
+#small-pitch {
+    margin-top: 30px ;
+    width: 10vw;
+    color: gray;
+}
+
+::-webkit-scrollbar {
+    display:none ;
+}
+
+
+#projects {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    padding-left: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 50px;
+    perspective: 1200px;
+    font-family: racing_sans_oneregular, Arial, serif;
+    text-align: right;
+}
+
+.project-text {
+    transform: rotateY(-40deg);
+    transition: 0.2s;
+    font-family: racing_sans_oneregular, Arial, serif;
+    text-align: right;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    cursor: pointer;
+
+}
+.project-text {
+    transform: rotateY(-40deg);
+}
+/*#wiz-cube {transform: rotateY(-40deg);}
+#plant-reminder {transform: rotateY(-40deg);}
+#nft {transform: rotateY(-40deg);}
+#clicker {transform: rotateY(-40deg);}*/
+
+/*#wiz-cube:hover,
+#plant-reminder:hover,
+#nft:hover,
+#clicker:hover*/
+.project-text:hover{
+    transition: 0.2s;
+    transform: rotateY(30deg);
+    color: white;
+
+}
+
+
+#small-pitch {
+    cursor: pointer;
+}
+
+#small-pitch:hover {
+    color: white;
+}
+
+ul {
+    margin-top: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 20px;
+    list-style: none;
+    margin: 0;
+    padding-bottom: 10px;
+    font-family: Arial, serif ;
+    width: auto;
+    cursor: pointer;
+}
+
+#logo-name {
+    font-size: 60px;
+    font-family: Arial, serif  ;
+
+}
+
+@font-face {
+    font-family: 'racing_sans_oneregular';
+    src: url('/assets/racingsansone-regular-webfont.woff2') format('woff2'),
+    url('assets/racingsansone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#navbar {
+    align-items: center;
+}
+
+#github {
+    margin-top: 50px;
+}
+
+.nav-bar:hover {
+    color: #7d7d7d;
+}
+
+.nav-bar:active {
+    color: #000000;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#section-1{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#about {
+    width: 40%;
+    height: 100vh;
+    color: white;
+    padding: 5%;
+    line-height: 30px;
+    text-align: left;
+    padding-top: 13%;
+}
+
+#about-title{
+    font-size: 60px;
+    margin-bottom: 30px;
+    font-weight: lighter;
+}
+
+
+#profile-pic{
+    height: 100vh;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    flex-direction: column;
+    position: relative;
+}
+
+#profile-pic-img{
+    object-fit: cover;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 8%;
+}
+
+#tech-stack-about{
+    top:10%;
+    height: 50vh;
+    display: block;
+    position: absolute;
+    width: 65%;
+    margin-left: 20%;
+}
+
+.tech-stack-logos {
+    height: 55px;
+    animation: floatSpace 10s infinite linear;
+    animation-direction: alternate;
+}
+
+
+#pic1{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+#pic2{
+    position: absolute;
+    top: 43%;
+    left: 15%;
+}
+#pic3{
+    position: absolute;
+    top: 27%;
+    left: 25%;
+}
+#pic4{
+    position: absolute;
+    top: 17%;
+    left: 37%;
+}
+#pic5{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+}
+#pic6{
+    position: absolute;
+    top: 17%;
+    left: 64%;
+}
+#pic7{
+    position: absolute;
+    top: 27%;
+    left: 75%;
+}
+#pic8{
+    position: absolute;
+    top: 43%;
+    left: 85%;
+}
+#pic9{
+    position: absolute;
+    top: 70%;
+    left: 90%;
+}
+
+/*
+@keyframes floatSpace {
+    20% {scale: 1.04; rotate: 10deg}
+    40% {scale: 0.96; transform:translateX( 2%); }
+    60% {scale: 1.05;transform:translateX( -2%); rotate: -1deg}
+    80% {scale: 0.95; transform:translateY( 2%)}
+}*/

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Projects</title>
+	<link rel="stylesheet" href="aboutStyles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<style>
+        .tech-stack-logos {
+            height: 55px;
+        }
+
+        @keyframes floatSpace {
+            20% {
+                transform: scale(1.1) translateX(-1%);
+                rotate: 4deg;
+            }
+            40% {
+                transform: scale(0.9) translateX(4%);
+            }
+            60% {
+                transform: scale(1.1) translateX(-4%);
+                rotate: -4deg;
+            }
+            80% {
+                transform: scale(0.9) translateX(4%);
+            }
+			100% {
+
+			}
+        }
+
+	</style>
+	<script>
+		function getRandomDelay() {
+			return Math.random() * 4; // Adjust the multiplier for the desired range
+		}
+
+		// Apply animation with random delays
+		$(document).ready(function() {
+			$('.tech-stack-logos').each(function() {
+				$(this).css('animation', 'floatSpace 10s infinite linear');
+				$(this).css('animation-direction', 'alternate');
+				$(this).css('animation-delay', getRandomDelay() + 's');
+			});
+		});
+	</script>
+</head>
+<body onunload='updateOpacity()'>
+<div id="front">
+	<h1 id="logo-name" ><a href="index.html">Samuel, <br> Web Dev</a></h1>
+	<div id="menu-wrap">
+		<p id="small-pitch">Full-Stack Dev in the making | Studying React, TypeScript, CSS, HTML | Backend: (Learning in progress)</p>
+		<ul id="navbar">
+			<li id="about-nav" class="nav-bar">
+				about
+			</li>
+			<li id="projects-nav" class="nav-bar">
+				projects
+			</li>
+			<li id="contact-nav" class="nav-bar">
+				contact
+			</li>
+			<li id='github' class="nav-bar">
+				<img src="assets/images/Vector.svg" alt="">
+			</li>
+			<li id="linkedIn" class="nav-bar">
+				<img src="assets/images/Vector2.svg" alt="">
+			</li>
+		</ul>
+	</div>
+</div>
+<section id="section-1">
+	<div id="profile-pic">
+		<div id="tech-stack-about">
+			<img id="pic1" class="tech-stack-logos" src="assets/images/vscode-icons_file-type-typescript-official.svg" alt="">
+			<img id="pic2" class="tech-stack-logos" src="assets/images/skill-icons_css.svg" alt="">
+			<img id="pic3" class="tech-stack-logos" src="assets/images/Group.svg" alt="">
+			<img id="pic4" class="tech-stack-logos" src="assets/images/logos_javascript.svg" alt="">
+			<img id="pic5" class="tech-stack-logos" src="assets/images/logos_react.svg" alt="">
+			<img id="pic6" class="tech-stack-logos" src="assets/images/logos_figma.svg" alt="">
+			<img id="pic7" class="tech-stack-logos" src="assets/images/ps.svg" alt="">
+			<img id="pic8" class="tech-stack-logos" src="assets/images/node.svg" alt="">
+			<img id="pic9" class="tech-stack-logos" src="assets/images/logos_python.png" alt="">
+		</div>
+		<img id="profile-pic-img" src="assets/images/pp.png" alt="">
+	</div>
+	<div id="about">
+		<h2 id="about-title">About</h2>
+		<p id="about-text">
+			Hello there, I'm Samuel, a passionate full-stack web developer. There's an undeniable thrill in unraveling the complexities of a problem and crafting elegant solutions.
+			<br>
+			<br>
+			As a programmer, I thrive on the rush that comes with tackling challenging tasks.
+			<br>
+			<br>
+			I don't see web development as just lines of code; it's about crafting meaningful experiences. when I am not using my free time on coding, I spend it on photography and with my family.
+		</p>
+	</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
