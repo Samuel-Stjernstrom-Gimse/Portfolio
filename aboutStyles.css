@@ -273,3 +273,38 @@ a {
     60% {scale: 1.05;transform:translateX( -2%); rotate: -1deg}
     80% {scale: 0.95; transform:translateY( 2%)}
 }*/
+a:hover {
+    color: #7d7d7d;
+
+}
+
+
+#phone-number{
+    position: relative;
+}
+#numberPhone {
+    position: absolute;
+    visibility: hidden;
+    top: -2%;
+    left: 30px;
+    font-size: 20px;
+}
+
+#numberPhone:hover{
+    color: white;
+}
+
+#email{
+    position: relative;
+}
+#mail {
+    position: absolute;
+    visibility: hidden;
+    top: -2%;
+    left: 30px;
+    font-size: 20px;
+}
+
+#mail:hover{
+    color: white;
+}

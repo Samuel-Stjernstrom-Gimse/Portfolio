@@ -17,7 +17,7 @@ body {
     position: absolute;
     z-index: 1;
     width: 100vw;
-    background-color: #0a242a;
+    background-color: #0b3534;
     height: 50vh;
     transition: 0.6s linear;
 }
@@ -162,15 +162,44 @@ a {
     text-decoration: none;
 }
 
-#noise {
-    pointer-events: none;
-    background-image: url("/assets/images/Noise & Texture.png");
-    opacity: 0.09;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    z-index: 1000;
+a:hover {
+    color: #7d7d7d;
+
 }
 
+a:hover {
+    color: #7d7d7d;
+
+}
+
+
+#phone-number{
+    position: relative;
+}
+#numberPhone {
+    position: absolute;
+    visibility: hidden;
+    top: -2%;
+    left: 30px;
+    font-size: 20px;
+}
+
+#numberPhone:hover{
+    color: white;
+}
+
+#email{
+    position: relative;
+}
+#mail {
+    position: absolute;
+    visibility: hidden;
+    top: -2%;
+    left: 30px;
+    font-size: 20px;
+}
+
+#mail:hover{
+    color: white;
+}
 
