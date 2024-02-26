@@ -7,18 +7,10 @@ const newWindows = (location) => {
     window.location.href = location;
 };
 abouts.addEventListener('click', () => {
-    menuWrap.style.opacity = '0';
-    menuWraps.style.transition = '700ms';
-    section.style.opacity = '0';
-    section.style.transition = '700ms';
-    setTimeout(newWindows, 700, 'about.html');
+    setTimeout(newWindows, 0, 'about.html');
 });
 projectss.addEventListener('click', () => {
-    menuWrap.style.opacity = '0';
-    menuWrap.style.transition = '700ms';
-    section.style.opacity = '0';
-    section.style.transition = '700ms';
-    setTimeout(newWindows, 700, 'index.html');
+    setTimeout(newWindows, 0, 'index.html');
 });
 const socialss = document.getElementById('socials');
 const logoss = document.getElementById('logosss');

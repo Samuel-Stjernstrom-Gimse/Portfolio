@@ -7,6 +7,7 @@ const projectText = document.getElementById('projects');
 const projectTitle = document.getElementById('project-title');
 const menuWrap = document.getElementById('menu-wrap');
 const doc = document.body;
+const background = document.getElementById('back-ground');
 const phoneNumber = document.getElementById('phonePic');
 const numberPhone = document.getElementById('numberPhone');
 let numberBool = false;
@@ -16,7 +17,7 @@ let logosBool = false;
 const vignetteInn = () => {
     div.forEach((div) => {
         div.style.height = '25vh';
-        div.style.backgroundColor = 'rgb(19,19,19)';
+        div.style.backgroundColor = 'rgb(11,11,11)';
         document.body.style.height = '300vh';
         document.body.style.overflow = 'visible';
     });
@@ -49,57 +50,54 @@ const updateOpacity = () => {
     projectText.style.color = '1';
     menuWrap.style.opacity = '1';
 };
-wizCube.addEventListener('click', () => {
-    menuWrap.style.opacity = '0';
-    projectText.style.transition = '700ms';
-    menuWrap.style.transition = '700ms';
-    projectText.style.opacity = '0';
-    setTimeout(newWindow, 700, 'wizCubePage.html');
-    setTimeout(vignetteInn, 1);
-    document.body.style.height = '300vh';
-    document.body.style.overflow = 'visible';
-});
-cryptoTrader.addEventListener('click', () => {
-    menuWrap.style.opacity = '0';
-    projectText.style.transition = '700ms';
-    menuWrap.style.transition = '700ms';
-    projectText.style.opacity = '0';
-    setTimeout(newWindow, 700, 'cryptoTrader.html');
-    setTimeout(vignetteInn, 1);
-    document.body.style.height = '300vh';
-    document.body.style.overflow = 'visible';
-});
-atomSim.addEventListener('click', () => {
-    menuWrap.style.opacity = '0';
-    projectText.style.transition = '700ms';
-    menuWrap.style.transition = '700ms';
-    projectText.style.opacity = '0';
-    setTimeout(newWindow, 700, 'AtomSim.html');
-    setTimeout(vignetteInn, 1);
-    document.body.style.height = '300vh';
-    document.body.style.overflow = 'visible';
-});
+if (wizCube) {
+    wizCube.addEventListener('click', () => {
+        background.style.opacity = '0';
+        menuWrap.style.opacity = '0';
+        projectText.style.transition = '700ms';
+        background.style.transition = '700ms';
+        menuWrap.style.transition = '700ms';
+        projectText.style.opacity = '0';
+        setTimeout(newWindow, 700, 'wizCubePage.html');
+        setTimeout(vignetteInn, 1);
+        document.body.style.height = '300vh';
+        document.body.style.overflow = 'visible';
+    });
+    cryptoTrader.addEventListener('click', () => {
+        background.style.opacity = '0';
+        menuWrap.style.opacity = '0';
+        projectText.style.transition = '700ms';
+        background.style.transition = '700ms';
+        menuWrap.style.transition = '700ms';
+        projectText.style.opacity = '0';
+        setTimeout(newWindow, 700, 'cryptoTrader.html');
+        setTimeout(vignetteInn, 1);
+        document.body.style.height = '300vh';
+        document.body.style.overflow = 'visible';
+    });
+    atomSim.addEventListener('click', () => {
+        background.style.opacity = '0';
+        menuWrap.style.opacity = '0';
+        projectText.style.transition = '700ms';
+        background.style.transition = '700ms';
+        menuWrap.style.transition = '700ms';
+        projectText.style.opacity = '0';
+        setTimeout(newWindow, 700, 'AtomSim.html');
+        setTimeout(vignetteInn, 1);
+        document.body.style.height = '300vh';
+        document.body.style.overflow = 'visible';
+    });
+}
 const about = document.getElementById('about-nav');
 const projects = document.getElementById('projects-nav');
 about.addEventListener('click', () => {
-    menuWrap.style.opacity = '0';
-    projectText.style.transition = '700ms';
-    menuWrap.style.transition = '700ms';
-    projectText.style.opacity = '0';
-    setTimeout(newWindow, 700, 'about.html');
-    setTimeout(vignetteInn, 1);
+    setTimeout(newWindow, 0, 'about.html');
 });
 projects.addEventListener('click', () => {
-    menuWrap.style.opacity = '0';
-    projectText.style.transition = '700ms';
-    menuWrap.style.transition = '700ms';
-    projectText.style.opacity = '0';
-    setTimeout(newWindow, 700, 'index.html');
-    setTimeout(vignetteInn, 1);
+    setTimeout(newWindow, 0, 'index.html');
 });
 socials.addEventListener('click', () => {
     numberPhone.style.visibility = 'visible';
-    mail.style.visibility = 'visible';
     logosBool = !logosBool;
     logosBool ? (logos.style.opacity = '1') : (logos.style.opacity = '0');
     logosBool ? (logos.style.visibility = 'visible') : (logos.style.visibility = 'hidden');

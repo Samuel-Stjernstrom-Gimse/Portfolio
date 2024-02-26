@@ -6,6 +6,7 @@ const projectText = document.getElementById('projects') as HTMLDivElement
 const projectTitle = document.getElementById('project-title')
 const menuWrap = document.getElementById('menu-wrap') as HTMLDivElement
 const doc = document.body as HTMLElement
+const background = document.getElementById('back-ground') as HTMLImageElement
 
 const phoneNumber = document.getElementById('phonePic') as HTMLLIElement
 const numberPhone = document.getElementById('numberPhone') as HTMLHeadingElement
@@ -18,7 +19,7 @@ let logosBool = false
 const vignetteInn = () => {
 	div.forEach((div: HTMLDivElement): void => {
 		div.style.height = '25vh'
-		div.style.backgroundColor = 'rgb(19,19,19)'
+		div.style.backgroundColor = 'rgb(11,11,11)'
 		document.body.style.height = '300vh'
 		document.body.style.overflow = 'visible'
 	})
@@ -52,74 +53,67 @@ const updateOpacity = () => {
 	menuWrap.style.opacity = '1'
 }
 
-wizCube.addEventListener('click', () => {
-	menuWrap.style.opacity = '0'
-	projectText.style.transition = '700ms'
-	menuWrap.style.transition = '700ms'
-	projectText.style.opacity = '0'
-	//add same for menu later
+if (wizCube) {
+	wizCube.addEventListener('click', () => {
+		background.style.opacity = '0'
+		menuWrap.style.opacity = '0'
+		projectText.style.transition = '700ms'
+		background.style.transition = '700ms'
+		menuWrap.style.transition = '700ms'
+		projectText.style.opacity = '0'
+		//add same for menu later
 
-	setTimeout(newWindow, 700, 'wizCubePage.html')
-	setTimeout(vignetteInn, 1)
+		setTimeout(newWindow, 700, 'wizCubePage.html')
+		setTimeout(vignetteInn, 1)
 
-	document.body.style.height = '300vh'
-	document.body.style.overflow = 'visible'
-})
+		document.body.style.height = '300vh'
+		document.body.style.overflow = 'visible'
+	})
 
-cryptoTrader.addEventListener('click', () => {
-	menuWrap.style.opacity = '0'
-	projectText.style.transition = '700ms'
-	menuWrap.style.transition = '700ms'
-	projectText.style.opacity = '0'
-	//add same for menu later
+	cryptoTrader.addEventListener('click', () => {
+		background.style.opacity = '0'
+		menuWrap.style.opacity = '0'
+		projectText.style.transition = '700ms'
+		background.style.transition = '700ms'
+		menuWrap.style.transition = '700ms'
+		projectText.style.opacity = '0'
+		//add same for menu later
 
-	setTimeout(newWindow, 700, 'cryptoTrader.html')
-	setTimeout(vignetteInn, 1)
+		setTimeout(newWindow, 700, 'cryptoTrader.html')
+		setTimeout(vignetteInn, 1)
 
-	document.body.style.height = '300vh'
-	document.body.style.overflow = 'visible'
-})
+		document.body.style.height = '300vh'
+		document.body.style.overflow = 'visible'
+	})
 
-atomSim.addEventListener('click', () => {
-	menuWrap.style.opacity = '0'
-	projectText.style.transition = '700ms'
-	menuWrap.style.transition = '700ms'
-	projectText.style.opacity = '0'
-	//add same for menu later
+	atomSim.addEventListener('click', () => {
+		background.style.opacity = '0'
+		menuWrap.style.opacity = '0'
+		projectText.style.transition = '700ms'
+		background.style.transition = '700ms'
+		menuWrap.style.transition = '700ms'
+		projectText.style.opacity = '0'
+		//add same for menu later
 
-	setTimeout(newWindow, 700, 'AtomSim.html')
-	setTimeout(vignetteInn, 1)
+		setTimeout(newWindow, 700, 'AtomSim.html')
+		setTimeout(vignetteInn, 1)
 
-	document.body.style.height = '300vh'
-	document.body.style.overflow = 'visible'
-})
+		document.body.style.height = '300vh'
+		document.body.style.overflow = 'visible'
+	})
+}
 
 const about = document.getElementById('about-nav') as HTMLLIElement
 const projects = document.getElementById('projects-nav') as HTMLLIElement
 about.addEventListener('click', () => {
-	menuWrap.style.opacity = '0'
-	projectText.style.transition = '700ms'
-	menuWrap.style.transition = '700ms'
-	projectText.style.opacity = '0'
-	//add same for menu later
-
-	setTimeout(newWindow, 700, 'about.html')
-	setTimeout(vignetteInn, 1)
+	setTimeout(newWindow, 0, 'about.html')
 })
 
 projects.addEventListener('click', () => {
-	menuWrap.style.opacity = '0'
-	projectText.style.transition = '700ms'
-	menuWrap.style.transition = '700ms'
-	projectText.style.opacity = '0'
-	//add same for menu later
-
-	setTimeout(newWindow, 700, 'index.html')
-	setTimeout(vignetteInn, 1)
+	setTimeout(newWindow, 0, 'index.html')
 })
 socials.addEventListener('click', () => {
 	numberPhone.style.visibility = 'visible'
-	mail.style.visibility = 'visible'
 	logosBool = !logosBool
 	logosBool ? (logos.style.opacity = '1') : (logos.style.opacity = '0')
 	logosBool ? (logos.style.visibility = 'visible') : (logos.style.visibility = 'hidden')

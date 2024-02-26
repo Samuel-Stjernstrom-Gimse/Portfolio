@@ -9,7 +9,7 @@ body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    background-color: #252525;
+    background-color: #00404c;
     transition: 0.4s;
 }
 
@@ -17,7 +17,7 @@ body {
     position: absolute;
     z-index: 1;
     width: 100vw;
-    background-color: #5d5d5d;
+    background-color: #00404c;
     height: 50vh;
     transition: 0.6s linear;
 }
@@ -470,3 +470,16 @@ img:hover{
     font-size: 20px;
     text-align: end;
 }
+#back-ground{
+    position: fixed;
+    bottom: 0;
+    z-index: -10;
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+#mail-pic{
+    width: 18px;
+}
+

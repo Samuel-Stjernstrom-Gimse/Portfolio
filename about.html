@@ -29,6 +29,23 @@
         }
 
 	</style>
+	<style>
+        /* Your existing CSS styles */
+        body {
+            opacity: 0; /* Initial opacity set to 0 */
+        }
+
+        body.fade-in {
+            opacity: 1; /* Opacity set to 1 on page load */
+            transition: opacity 1s ease-in-out; /* Add transition effect */
+        }
+	</style>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			// Add 'fade-in' class to the body element after the content is loaded
+			document.body.classList.add('fade-in');
+		});
+	</script>
 	<script>
 		function getRandomDelay() {
 			return Math.random() * 4; // Adjust the multiplier for the desired range
@@ -73,11 +90,10 @@
 				</li>
 				<li id="phone-number" class="nav-bar">
 					<img id="phonePic" src="assets/images/mdi_phone.svg" alt="">
-					<h1 id="numberPhone" >95464712</h1>
+					<a href="tel:95464712"><h1 id="numberPhone" >95464712</h1></a>
 				</li>
 				<li id="email" class="nav-bar">
-					<img src="assets/images/material-symbols_contact-mail-sharp.svg" alt="">
-					<h1 id="mail"> samuel.gimse@hotmail.com </h1>
+					<a  href=mailto:samuel.kodehode@gmail.com><img  id="mail-pic"  src="assets/images/material-symbols_contact-mail-sharp.svg" alt=""></a>
 				</li>
 			</ul>
 
@@ -112,6 +128,7 @@
 		</p>
 	</div>
 </section>
+<img id="back-ground" src="assets/images/layered-steps-haikei%20(3).svg" alt="">
 
 <script src="script.js"></script>
 <script src="aboutScript.js"></script>
