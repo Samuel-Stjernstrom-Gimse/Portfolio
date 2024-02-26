@@ -21,6 +21,7 @@ body {
     color: transparent;
     -webkit-text-stroke: 7px white;
     transition: 2s;
+    text-align: center;
 }
 
 #top,#bottom {

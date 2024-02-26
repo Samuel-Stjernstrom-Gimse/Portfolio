@@ -7,6 +7,9 @@ const projectText = document.getElementById('projects');
 const projectTitle = document.getElementById('project-title');
 const menuWrap = document.getElementById('menu-wrap');
 const doc = document.body;
+const phoneNumber = document.getElementById('phonePic');
+const numberPhone = document.getElementById('numberPhone');
+let numberBool = false;
 const vignetteInn = () => {
     div.forEach((div) => {
         div.style.height = '25vh';
@@ -15,6 +18,27 @@ const vignetteInn = () => {
         document.body.style.overflow = 'visible';
     });
 };
+phoneNumber.addEventListener('click', () => {
+    numberBool = !numberBool;
+    if (numberBool) {
+        numberPhone.style.visibility = 'visible';
+    }
+    else {
+        numberPhone.style.visibility = 'hidden';
+    }
+});
+const email = document.getElementById('email');
+const mail = document.getElementById('mail');
+let mailBool = false;
+email.addEventListener('click', () => {
+    mailBool = !mailBool;
+    if (mailBool) {
+        mail.style.visibility = 'visible';
+    }
+    else {
+        mail.style.visibility = 'hidden';
+    }
+});
 const newWindow = (location) => {
     window.location.href = location;
 };
@@ -51,5 +75,23 @@ atomSim.addEventListener('click', () => {
     setTimeout(vignetteInn, 1);
     document.body.style.height = '300vh';
     document.body.style.overflow = 'visible';
+});
+const about = document.getElementById('about-nav');
+const projects = document.getElementById('projects-nav');
+about.addEventListener('click', () => {
+    menuWrap.style.opacity = '0';
+    projectText.style.transition = '700ms';
+    menuWrap.style.transition = '700ms';
+    projectText.style.opacity = '0';
+    setTimeout(newWindow, 700, 'about.html');
+    setTimeout(vignetteInn, 1);
+});
+projects.addEventListener('click', () => {
+    menuWrap.style.opacity = '0';
+    projectText.style.transition = '700ms';
+    menuWrap.style.transition = '700ms';
+    projectText.style.opacity = '0';
+    setTimeout(newWindow, 700, 'index.html');
+    setTimeout(vignetteInn, 1);
 });
 //# sourceMappingURL=script.js.map

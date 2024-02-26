@@ -37,6 +37,13 @@ body {
     z-index: 1000;
 }
 
+@media (max-height: 680px), screen and (orientation: portrait) {
+    #front{
+        max-height: 50vh;
+    }
+}
+
+
 #project-title {
 
     font-size:200px;
@@ -62,15 +69,24 @@ body {
     top: 0;
     height: 100vh;
     width: 100vw;
-    padding-left: 30%;
+    padding-left: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-size: 50px;
+    font-size: 60px;
     perspective: 1200px;
     font-family: racing_sans_oneregular, Arial, serif;
     text-align: right;
+}
+
+@media (max-height: 680px), screen and (orientation: portrait) {
+    #projects{
+        top: 24%;
+        padding-left: 0;
+        left: -5%;
+        font-size: 30px;
+    }
 }
 
 .project-text {
@@ -102,7 +118,9 @@ body {
 
 }
 
+@media (max-height: 680px), screen and (orientation: portrait) {
 
+}
 #small-pitch {
     cursor: pointer;
 }
@@ -110,7 +128,11 @@ body {
 #small-pitch:hover {
     color: white;
 }
-
+@media (max-height: 680px), screen and (orientation: portrait) {
+    #small-pitch{
+        display: none;
+    }
+}
 ul {
     margin-top: 30px;
     list-style: none;
@@ -146,12 +168,9 @@ li {
 }
 
 #github {
-    margin-top: 50px;
+    margin-top: 0;
 }
 
-.nav-bar:hover {
-    color: #7d7d7d;
-}
 
 .nav-bar:active {
     color: #000000;
@@ -162,15 +181,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #7d7d7d;
-
-}
-
-a:hover {
-    color: #7d7d7d;
-
-}
 
 
 #phone-number{
@@ -203,3 +213,13 @@ a:hover {
     color: white;
 }
 
+img:hover{
+    opacity: 0.7;
+}
+
+@media (max-height: 680px), screen and (orientation: portrait) {
+    h3 {
+        font-size: 25px;
+        opacity: 0.9;
+    }
+}

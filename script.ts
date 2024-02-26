@@ -7,6 +7,10 @@ const projectTitle = document.getElementById('project-title')
 const menuWrap = document.getElementById('menu-wrap') as HTMLDivElement
 const doc = document.body as HTMLElement
 
+const phoneNumber = document.getElementById('phonePic') as HTMLLIElement
+const numberPhone = document.getElementById('numberPhone') as HTMLHeadingElement
+let numberBool = false
+
 const vignetteInn = () => {
 	div.forEach((div: HTMLDivElement): void => {
 		div.style.height = '25vh'
@@ -15,6 +19,27 @@ const vignetteInn = () => {
 		document.body.style.overflow = 'visible'
 	})
 }
+phoneNumber.addEventListener('click', () => {
+	numberBool = !numberBool
+	if (numberBool) {
+		numberPhone.style.visibility = 'visible'
+	} else {
+		numberPhone.style.visibility = 'hidden'
+	}
+})
+
+const email = document.getElementById('email') as HTMLLIElement
+const mail = document.getElementById('mail') as HTMLHeadingElement
+let mailBool = false
+email.addEventListener('click', () => {
+	mailBool = !mailBool
+	if (mailBool) {
+		mail.style.visibility = 'visible'
+	} else {
+		mail.style.visibility = 'hidden'
+	}
+})
+
 const newWindow = (location: string) => {
 	window.location.href = location
 }
@@ -63,4 +88,28 @@ atomSim.addEventListener('click', () => {
 
 	document.body.style.height = '300vh'
 	document.body.style.overflow = 'visible'
+})
+
+const about = document.getElementById('about-nav') as HTMLLIElement
+const projects = document.getElementById('projects-nav') as HTMLLIElement
+about.addEventListener('click', () => {
+	menuWrap.style.opacity = '0'
+	projectText.style.transition = '700ms'
+	menuWrap.style.transition = '700ms'
+	projectText.style.opacity = '0'
+	//add same for menu later
+
+	setTimeout(newWindow, 700, 'about.html')
+	setTimeout(vignetteInn, 1)
+})
+
+projects.addEventListener('click', () => {
+	menuWrap.style.opacity = '0'
+	projectText.style.transition = '700ms'
+	menuWrap.style.transition = '700ms'
+	projectText.style.opacity = '0'
+	//add same for menu later
+
+	setTimeout(newWindow, 700, 'index.html')
+	setTimeout(vignetteInn, 1)
 })
