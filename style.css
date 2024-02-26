@@ -82,7 +82,7 @@ body {
 
 @media (max-height: 680px), screen and (orientation: portrait) {
     #projects{
-        top: 24%;
+        top: 10%;
         padding-left: 0;
         left: -5%;
         font-size: 30px;
@@ -187,9 +187,10 @@ a {
     position: relative;
 }
 #numberPhone {
+    padding-left: 20px;
     position: absolute;
     visibility: hidden;
-    top: -2%;
+    top: 0;
     left: 30px;
     font-size: 20px;
 }
@@ -202,11 +203,13 @@ a {
     position: relative;
 }
 #mail {
+    padding-left: 20px;
     position: absolute;
     visibility: hidden;
-    top: -2%;
+    top: 0;
     left: 30px;
     font-size: 20px;
+    text-align: end;
 }
 
 #mail:hover{
@@ -217,9 +220,37 @@ img:hover{
     opacity: 0.7;
 }
 
+#socials {
+    visibility: hidden;
+}
+
 @media (max-height: 680px), screen and (orientation: portrait) {
-    h3 {
-        font-size: 25px;
-        opacity: 0.9;
+    #logosss{
+        visibility: hidden;
+        padding: 10px;
+        position: fixed;
+        background-color: rgba(51, 51, 51, 0.65);
+        width: 100vw;
+        padding-left: 20px;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+
+    }
+    img {
+        height: 30px;
+    }
+    #menuss{
+        display: flex;
+        flex-direction: row;
+    }
+
+    li{
+        padding: 10px;
+    }
+    #socials {
+        visibility: visible;
     }
 }
+
+

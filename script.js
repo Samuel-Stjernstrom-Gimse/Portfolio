@@ -10,6 +10,9 @@ const doc = document.body;
 const phoneNumber = document.getElementById('phonePic');
 const numberPhone = document.getElementById('numberPhone');
 let numberBool = false;
+const socials = document.getElementById('socials');
+const logos = document.getElementById('logosss');
+let logosBool = false;
 const vignetteInn = () => {
     div.forEach((div) => {
         div.style.height = '25vh';
@@ -93,5 +96,12 @@ projects.addEventListener('click', () => {
     projectText.style.opacity = '0';
     setTimeout(newWindow, 700, 'index.html');
     setTimeout(vignetteInn, 1);
+});
+socials.addEventListener('click', () => {
+    numberPhone.style.visibility = 'visible';
+    mail.style.visibility = 'visible';
+    logosBool = !logosBool;
+    logosBool ? (logos.style.opacity = '1') : (logos.style.opacity = '0');
+    logosBool ? (logos.style.visibility = 'visible') : (logos.style.visibility = 'hidden');
 });
 //# sourceMappingURL=script.js.map

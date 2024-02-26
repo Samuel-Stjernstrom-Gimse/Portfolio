@@ -149,9 +149,7 @@ li {
     margin-top: 50px;
 }
 
-.nav-bar:hover {
-    color: #7d7d7d;
-}
+
 
 .nav-bar:active {
     color: #000000;
@@ -309,6 +307,166 @@ a {
 img:hover{
     opacity: 0.7;
 }
-a:hover {
-    opacity: 0.7;
+
+
+#socials {
+    visibility: hidden;
+}
+
+@media (max-height: 680px), screen and (orientation: portrait) {
+    #logosss{
+        visibility: hidden;
+        padding: 10px;
+        position: fixed;
+        background-color: rgb(51, 51, 51);
+        width: 100vw;
+        padding-left: 20px;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+
+    }
+    #menuss{
+        display: flex;
+        flex-direction: row;
+    }
+
+    li{
+        padding: 10px;
+    }
+    #socials {
+        visibility: visible;
+    }
+
+}
+
+@media (max-height: 680px), screen and (orientation: portrait) {
+    #front{
+        position: fixed;
+        top: 0;
+        max-height: 50vh;
+    }
+}
+@media (max-height: 680px), screen and (orientation: portrait) {
+    #small-pitch{
+        display: none;
+    }
+}
+@media (max-height: 680px), screen and (orientation: portrait) {
+    #pic1,#pic2,#pic3,#pic4,#pic5,#pic6,#pic7,#pic8,#pic9 {
+        top: 100%;
+        height: 24px;
+    }
+    #pic1{
+        left: 10%;
+    }
+    #pic2{
+        left: 20%;
+    }
+    #pic3{
+        left: 30%;
+    }
+    #pic4{
+        left: 40%;
+    }
+    #pic5{
+        left: 50%;
+    }
+    #pic6{
+        left: 60%;
+    }
+    #pic7{
+        left: 70%;
+    }
+    #pic8{
+        left: 80%;
+    }
+    #pic9{
+        left: 90%;
+    }
+
+    #section-1{
+        margin-top: 35vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    html{
+        width: 100vw;
+    }
+     body{
+       overflow: visible;
+        max-width: 100vw;
+    }
+    #profile-pic {
+        height: 50vh;
+        width: 90vw;
+        padding: 0;
+    }
+    #profile-pic-img{
+        width: 90%;
+        margin-left: 0;
+        margin-top: 0;
+        padding-right: 0;
+        top: 0;
+    }
+    #tech-stack{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        margin-left: 0;
+    }
+    #tech-stack-about{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        top: -5%;
+        left: 0%;
+    }
+
+    #about-title{
+        text-align: center;
+        padding-left: 20px;
+    }
+    #about-text{
+        padding: 20px;
+    }
+    #about{
+        width: 90vw;
+    }
+
+
+}
+#phone-number{
+    position: relative;
+}
+#numberPhone {
+    padding-left: 20px;
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: 30px;
+    font-size: 20px;
+}
+
+#numberPhone:hover{
+    color: white;
+}
+
+#email{
+    position: relative;
+}
+#mail {
+    padding-left: 20px;
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    left: 30px;
+    font-size: 20px;
+    text-align: end;
 }

@@ -11,6 +11,10 @@ const phoneNumber = document.getElementById('phonePic') as HTMLLIElement
 const numberPhone = document.getElementById('numberPhone') as HTMLHeadingElement
 let numberBool = false
 
+const socials = document.getElementById('socials') as HTMLHeadingElement
+const logos = document.getElementById('logosss') as HTMLElement
+let logosBool = false
+
 const vignetteInn = () => {
 	div.forEach((div: HTMLDivElement): void => {
 		div.style.height = '25vh'
@@ -112,4 +116,11 @@ projects.addEventListener('click', () => {
 
 	setTimeout(newWindow, 700, 'index.html')
 	setTimeout(vignetteInn, 1)
+})
+socials.addEventListener('click', () => {
+	numberPhone.style.visibility = 'visible'
+	mail.style.visibility = 'visible'
+	logosBool = !logosBool
+	logosBool ? (logos.style.opacity = '1') : (logos.style.opacity = '0')
+	logosBool ? (logos.style.visibility = 'visible') : (logos.style.visibility = 'hidden')
 })
